@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Swift 5.3 - What's new
+title: Swift 5.3 - What's New
 description: There's been a lot of great strides made with the release of Swift 5.3.  I'll go over s...
 date: 2020-11-28 15:01:35 +0300
 image: /images/swift.jpg

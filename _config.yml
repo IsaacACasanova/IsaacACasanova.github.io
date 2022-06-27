@@ -12,11 +12,12 @@ color_scheme: dark # You can choose three modes auto, light, and dark. By defaul
 # Author Settings
 author:
   author__name: Isaac Casanova
-  author__bio: iOS Engineer. I discuss mobile, ethics, privacy, and dev. I share free resources and inspiration.
-  author__avatar: '/images/109-1.jpg'
+  author__bio: iOS Engineer @Twitter. I discuss my thoughts on mobile, ethics, and privacy.
+  author__avatar: '/images/profile-pic-small.jpg'
 
 social:
 - {icon: "ion-logo-twitter", link: "https://twitter.com/casanovacane"}
+- {icon: "ion-logo-instagram", link: "https://www.instagram.com/mrcasanova"}
 
 # Example of adding a new link to the footer - {icon: "ion-logo-dribbble", link: "https://dribbble.com"}
 # Other icons can be found at https://ionicons.com/v4/
@@ -26,8 +27,8 @@ social:
 # Hero Settings
 hero:
   hero__title: Hey, I'm Isaac Casanova
-  hero__description: iOS Engineer. I discuss mobile, ethics, privacy, and dev. I share free resources and inspiration.
-  hero__image: '/images/109.jpg'
+  hero__description: iOS Engineer @Twitter. I discuss my thoughts on mobile, ethics, and privacy.
+  hero__image: '/images/profile-pic-large.jpg'
 
 
 #-------------------------------
@@ -36,33 +37,6 @@ mailchimp: '' # To enable the mailchimp form, use the value 'enable'. To disable
 mailchimp__identifier: frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3 # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
 mailchimp__input__text: Subscribe here
 mailchimp__button__text: Get a new tip
-
-
-#-------------------------------
-# Gallery Footer Section
-# gallery:
-#   gallery__title: Gallery
-#   gallery__columns: 3
-#   gallery__images:
-#     - alt: 'Rest'
-#       url: '/images/100.jpg'
-#     - alt: 'Lifestyle'
-#       url: '/images/101.jpg'
-#     - alt: 'Hobby'
-#       url: '/images/102.jpg'
-#     - alt: 'Notes'
-#       url: '/images/103.jpg'
-#     - alt: 'Rest'
-#       url: '/images/104.jpg'
-#     - alt: 'Hobby'
-#       url: '/images/105.jpg'
-#     - alt: 'Fashion'
-#       url: '/images/106.jpg'
-#     - alt: 'Notes'
-#       url: '/images/107.jpg'
-#     - alt: 'Rest'
-#       url: '/images/108.jpg'
-
 
 #-------------------------------
 # Contact Settings
