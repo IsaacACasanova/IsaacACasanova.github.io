@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Motivation During the COVID-19 Pandemic
+title: Perservering Through COVID-19
 description: The COVID-19 pandemic made this year extremely difficult on everyone. From t...
 date: 2020-11-22 15:01:35 +0300
 image: /images/covid-19.jpg
