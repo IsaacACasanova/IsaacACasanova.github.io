@@ -3,7 +3,7 @@ layout: post
 title: How to Conquer Impostor Syndrome.
 description: It's been a long time since I've posted on my blog.  Since the last ti...
 date: 2022-06-27 11:46:35 +0300
-image: /images/twitter-logo-blue.jpg
+image: /images/twitter-logo.jpg
 tags: [motivation, twitter]
 ---
 
