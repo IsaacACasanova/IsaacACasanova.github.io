@@ -4,7 +4,7 @@ title: How to Conquer Impostor Syndrome.
 description: It's been a long time since I've posted on my blog.  Since the last ti...
 date: 2022-06-27 11:46:35 +0300
 image: /images/twitter-logo-blue.jpg
-tags: [motivation]
+tags: [motivation, twitter]
 ---
 
 It's been a long time since I've posted on my blog. Since the last time we've touched base, I left my previous employer, [JOOR](https://www.joor.com/). As of this post, I've been working at [Twitter](https://twitter.com/home) for about a year and a half now. I'll share some of what I've learned, in the hopes it'll help someone out there. 
