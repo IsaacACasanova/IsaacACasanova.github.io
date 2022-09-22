@@ -28,6 +28,8 @@ The best thing to do is to not resist what's happening. Don't try to force certa
 
 # Take care of yourself
 
+![A picture describing mental health](/images/mental-health.jpg)          
+
 It's easy to forget that you're your biggest investment. Taking care of yourself is paramount to navigating through periods like this one. A few suggestions that have helped me:
 
 - Limit exposure to social media.
@@ -38,12 +40,15 @@ Don't feel bad or feel like you shouldn't tend to yourself. A lot of the anxiety
 
 # Engage in healthy activities
 
-Do your best to stay away from overconsumption of drugs or alcohol. Sure, in the moment you'll feel fine, but they don't do much to help in the long run. Navigating through uncertainty requires doing things that help you both mentally and physically. Catch up with close friends and family, either through phone or text. Sometimes just reaching out to those close to you and having a normal conversation can put you at ease. Watch a favorite show of yours, cook (or order) your favorite meal, or take yourself out on a date. When's the last time you truly enjoyed yourself without stressing over what's next? Take it easy on yourself -- it'll help putting ideas together to ease your stress.
+![A picture showing healthy food and working out](/images/healthy-living.jpg)   
+
+Do your best to stay away from overconsumption of drugs or alcohol. Sure, in the moment you'll feel fine, but they don't do much to help in the long run. Catch up with close friends and family -- just reaching out to those close to you can put you at ease. Watch a favorite show of yours, cook (or order) your favorite meal, or take yourself out on a date. When's the last time you truly enjoyed yourself? Taking a break will help to ease your stress.
 
 # Actively control what you can
 
-There's lots of little things we can all stay accountable toward. Weekly meal prep, timely laundry, and journaling are a few things you can take part in. If you've been wanting to learn how to play an instrument, finish a certain book or podcast, or maybe a painting you've been working on -- take a small step toward accomplishing that. Developing a new skill takes one small step at a time, and before you know it, you've learned something new! Create a learning opportunity and reward yourself accordingly.
+There's lots of things we can all stay accountable toward. Weekly meal prep, timely laundry, and journaling are a few things you can do. If you've been wanting to learn how to play an instrument, finish a certain book or podcast, or maybe a painting you've been working on -- take a small step toward accomplishing that. Developing a new skill takes one small step at a time, and before you know it, you've learned something new! Create a learning opportunity and reward yourself accordingly.
 
 # Have confidence in yourself
 
-Look back at your past successes. Did they not all come with a level of uncertainty? You've been in this same spot before. Maybe the circumstances were different, but at its core, the situation was the same -- you didn't know what you didn't know. Have some confidence in yourself. You've navigated through murky waters and come out the other end just fine. One way you can look at this is an opportunity to once again prove that you can overcome.
+Look back at your past successes. Did they not all come with a level of uncertainty? You've been in this same spot before. Maybe the circumstances were different, but at its core, the situation was the same. You didn't know what you didn't know. Have some confidence in yourself! You've navigated through murky waters and come out the other end just fine. This is an opportunity to once again prove that you can overcome, seize it!
+
