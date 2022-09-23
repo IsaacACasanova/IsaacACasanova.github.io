@@ -20,7 +20,7 @@ In the recent months, we've been dealing with an abnormal amount of uncertainty.
 
 # Don't resist
 
-The best thing to do is to not resist what's happening. Don't try to force certainty out of the uncertain. This doesn't mean to just sit there and not take action, you should always strive to put your best foot forward. There is a diminishing return on trying to control what's out of your reach, however, and you should be aware of that. You're not going to be able to fix inflation, or bring stability back to the job market -- these are issues brought on by gradual movements chained together on a global scale. But you can take better care of yourself physically, emotionally and spiritually.
+Don't try to force certainty out of the uncertain. This doesn't mean to sit and not take action, you should always strive to put your best foot forward. There are certain things out of your reach, and you should be aware of that. You're not going to be able to fix inflation, or bring stability back to the job market.  These are issues brought on by gradual movements chained together on a global scale. It took many events and lots of time for these things to happen, so they won't resolve themselves overnight. But what you can do is take better care of yourself physically, emotionally and spiritually.
 
 >Uncertainty is the only certainty there is, and knowing how to live with insecurity is the only security.
 >
@@ -28,27 +28,37 @@ The best thing to do is to not resist what's happening. Don't try to force certa
 
 # Take care of yourself
 
-![A picture describing mental health](/images/mental-health.jpg)          
+![Mental health](/images/mental-health.jpg)          
 
-It's easy to forget that you're your biggest investment. Taking care of yourself is paramount to navigating through periods like this one. A few suggestions that have helped me:
+It's easy to forget that you're your biggest investment. Taking care of yourself is key to navigating through periods of uncertainty. A few suggestions that have helped me:
 
-- Limit exposure to social media.
-- Try and work out regularly. Hate the gym? Do a 30-minute walk, once a day.
-- Feeling down? Reach out for mental health help. I used [Modern Health](https://modernhealth.com/), but there are also services like [BetterHelp](https://www.betterhelp.com/) that can help as well.
+- Limiting exposure to social media.
+- Working out regularly. Hate the gym? Do a 30-minute walk, once a day.
+- Feeling down? Reach out for help. I used [Modern Health](https://modernhealth.com/), but there are also services like [BetterHelp](https://www.betterhelp.com/) that can help as well.
 
-Don't feel bad or feel like you shouldn't tend to yourself. A lot of the anxiety that uncertainty brings also comes from the fact that we usually neglect ourselves during times like these. We become too preoccupied trying to steady the ship, and as a result forget to take care of ourselves.
+Don't feel bad or feel like you shouldn't tend to yourself. A lot of the anxiety that uncertainty brings also stems from the fact that we usually neglect ourselves during times like these. We become too preoccupied trying to steady the ship, and as a result forget to take care of ourselves. Make sure you're okay before trying to fix everything around you.
 
 # Engage in healthy activities
 
-![A picture showing healthy food and working out](/images/healthy-living.jpg)   
+![Healthy food and working out](/images/healthy-living.jpg)   
 
-Do your best to stay away from overconsumption of drugs or alcohol. Sure, in the moment you'll feel fine, but they don't do much to help in the long run. Catch up with close friends and family -- just reaching out to those close to you can put you at ease. Watch a favorite show of yours, cook (or order) your favorite meal, or take yourself out on a date. When's the last time you truly enjoyed yourself? Taking a break will help to ease your stress.
+ Catch up with close friends and family -- reaching out to those close to you can put you at ease. Watch a favorite show of yours, cook (or order) your favorite meal, or take yourself out on a date. When's the last time you truly enjoyed yourself? Taking a break will help to ease your stress.
 
-# Actively control what you can
+# Control what you can
 
-There's lots of things we can all stay accountable toward. Weekly meal prep, timely laundry, and journaling are a few things you can do. If you've been wanting to learn how to play an instrument, finish a certain book or podcast, or maybe a painting you've been working on -- take a small step toward accomplishing that. Developing a new skill takes one small step at a time, and before you know it, you've learned something new! Create a learning opportunity and reward yourself accordingly.
+![Someone writing in a journal](/images/journaling.jpg)
+
+ Weekly meal prep, timely laundry, and journaling are a few things that can help us maintain control during uncertain times. If you've been wanting to learn how to play an instrument, finish a certain book or podcast, or maybe a painting you've been working on -- take a small step toward accomplishing that. Create a learning opportunity and reward yourself accordingly. 
 
 # Have confidence in yourself
 
-Look back at your past successes. Did they not all come with a level of uncertainty? You've been in this same spot before. Maybe the circumstances were different, but at its core, the situation was the same. You didn't know what you didn't know. Have some confidence in yourself! You've navigated through murky waters and come out the other end just fine. This is an opportunity to once again prove that you can overcome, seize it!
+![Someone ripping a piece of paper saying they can't](/images/confidence-in-yourself.jpg)
+
+Look back at your past successes. Did they not all come with a level of uncertainty? You've been in a similar spot before. You've navigated through tough situations before, and continued onward. This is an opportunity to once again prove that you can overcome, seize it!
+
+# Moving forward
+
+The most important thing to take away from this is that these times don't last forever. The markets will rebound, war will cease, employment will become more stable. Take this time to identify with what's most important to you. Take advantage of opportunities to expand your skillset, and take some safe risks. Touch base with your family and friends, and remember to take care of yourself. Like everything, [this too shall pass](https://en.wikipedia.org/wiki/This_too_shall_pass).
+
+Thanks so much for reading. As always, comments are welcome!
 
