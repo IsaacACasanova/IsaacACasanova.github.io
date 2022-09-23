@@ -13,14 +13,16 @@ In the recent months, we've been dealing with an abnormal amount of uncertainty.
 
 # A global meltdown
 
+![Earth](/images/earth.jpg)
+
 - As if dealing with a global pandemic wasn't enough, [Russia declared war](https://en.wikipedia.org/wiki/2022_Russian_invasion_of_Ukraine) on Ukraine, which sent the global markets and global supply chain into a spiral.
 - [Inflation](https://en.wikipedia.org/wiki/2021%E2%80%932022_inflation_surge) is on track to hit 10% for the year in U.S, a number that's being hit for the very first time in many places.
 - Big tech is taking a big hit. [Coinbase](https://www.wsj.com/articles/crypto-exchange-coinbase-to-lay-off-18-of-staff-11655211069), [Snapchat](https://www.businessinsider.com/snaps-messy-layoffs-locked-workers-out-so-fast-they-couldnt-be-let-go-2022-9), and [Twitter](https://en.wikipedia.org/wiki/Proposed_acquisition_of_Twitter_by_Elon_Musk) are going through very, very tough times.
-- In general, companies are taking a capitalistic approach to protecting the bottom line and profits. Several industries are rescinding offers, conducting layoffs, cutting on bonuses, and making taking time off more difficult.
+- In general, companies are protecting profits over people. Organizations are rescinding offers, conducting layoffs, and cutting on bonuses, just to name a few.
 
 # Don't resist
 
-Don't try to force certainty out of the uncertain. This doesn't mean to sit and not take action, you should always strive to put your best foot forward. There are certain things out of your reach, and you should be aware of that. You're not going to be able to fix inflation, or bring stability back to the job market.  These are issues brought on by gradual movements chained together on a global scale. It took many events and lots of time for these things to happen, so they won't resolve themselves overnight. But what you can do is take better care of yourself physically, emotionally and spiritually.
+Don't try to force certainty out of the uncertain. This doesn't mean to sit and not take action, you should always strive to put your best foot forward. There are certain things out of your reach, and you should be aware of that. You're not going to be able to fix inflation, or bring stability back to the job market. But what you can do is take better care of yourself physically, emotionally and spiritually.
 
 >Uncertainty is the only certainty there is, and knowing how to live with insecurity is the only security.
 >
@@ -58,7 +60,7 @@ Look back at your past successes. Did they not all come with a level of uncertai
 
 # Moving forward
 
-The most important thing to take away from this is that these times don't last forever. The markets will rebound, war will cease, employment will become more stable. Take this time to identify with what's most important to you. Take advantage of opportunities to expand your skillset, and take some safe risks. Touch base with your family and friends, and remember to take care of yourself. Like everything, [this too shall pass](https://en.wikipedia.org/wiki/This_too_shall_pass).
+These times won't last forever. The markets will rebound, war will cease, and employment will become more stable. Take this time to identify with what's most important to you. Find opportunities to expand your skillset, and take some safe risks. Touch base with your family and friends, and remember to take care of yourself. Like everything, [this too shall pass](https://en.wikipedia.org/wiki/This_too_shall_pass).
 
 Thanks so much for reading. As always, comments are welcome!
 
