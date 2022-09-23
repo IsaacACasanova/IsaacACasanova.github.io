@@ -36,7 +36,7 @@ It's easy to forget that you're your biggest investment. Taking care of yourself
 
 - Limiting exposure to social media.
 - Working out regularly. Hate the gym? Do a 30-minute walk, once a day.
-- Feeling down? Reach out for help. I used [Modern Health](https://modernhealth.com/), but there are also services like [BetterHelp](https://www.betterhelp.com/) that can help as well.
+- Feeling down? Reach out for help. I used [Modern Health](https://modernhealth.com/), but there are also services like [BetterHelp](https://www.betterhelp.com/) out there.
 
 Don't feel bad or feel like you shouldn't tend to yourself. A lot of the anxiety that uncertainty brings also stems from the fact that we usually neglect ourselves during times like these. We become too preoccupied trying to steady the ship, and as a result forget to take care of ourselves. Make sure you're okay before trying to fix everything around you.
 
@@ -50,7 +50,7 @@ Don't feel bad or feel like you shouldn't tend to yourself. A lot of the anxiety
 
 ![Someone writing in a journal](/images/journaling.jpg)
 
- Weekly meal prep, timely laundry, and journaling are a few things that can help us maintain control during uncertain times. If you've been wanting to learn how to play an instrument, finish a certain book or podcast, or maybe a painting you've been working on -- take a small step toward accomplishing that. Create a learning opportunity and reward yourself accordingly. 
+ Weekly meal prep, timely laundry, and journaling are a few things that can help us maintain control during uncertain times. If you've been wanting to learn how to play an instrument, finish a certain book or podcast, or maybe finish a painting you've been working on -- take a small step toward accomplishing that. Create a learning opportunity and reward yourself accordingly. 
 
 # Have confidence in yourself
 
