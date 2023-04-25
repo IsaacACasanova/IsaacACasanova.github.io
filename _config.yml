@@ -12,7 +12,7 @@ color_scheme: dark # You can choose three modes auto, light, and dark. By defaul
 # Author Settings
 author:
   author__name: Isaac Casanova
-  author__bio: iOS Engineer @Twitter. I discuss my thoughts on mobile, ethics, and privacy.
+  author__bio: Senior Software Engineer <a href="https://block.xyz/">@block.xyz</a>. I discuss my thoughts on mobile, ethics, and privacy.
   author__avatar: '/images/profile-pic-small.jpg'
 
 social:
@@ -28,7 +28,7 @@ social:
 # Hero Settings
 hero:
   hero__title: Hey, I'm Isaac Casanova
-  hero__description: iOS Engineer @Twitter. I discuss my thoughts on mobile, ethics, and privacy.
+  hero__description: Senior Software Engineer <a href="https://block.xyz/">@block.xyz</a>. I discuss my thoughts on mobile, ethics, and privacy.
   hero__image: '/images/profile-pic-large.jpg'
 
 
