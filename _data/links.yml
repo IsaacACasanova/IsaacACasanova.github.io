@@ -1,0 +1,7 @@
+- { label: email,      url: "mailto:isaacacasanova@gmail.com" }
+- { label: github,     url: "https://github.com/IsaacACasanova" }
+- { label: linkedin,   url: "https://www.linkedin.com/in/isaacacasanova/" }
+- { label: twitter,    url: "https://twitter.com/casanovacane" }
+- { label: instagram,  url: "https://www.instagram.com/mrcasanova" }
+- { label: "talk · Brooklyn Swift", url: "https://www.meetup.com/Brooklyn-Swift-Developers/events/262974966/" }
+- { label: "/dev/color squad facilitator", url: "https://www.devcolor.org/" }

@@ -1,0 +1,22 @@
+{%- comment -%}
+Menca homepage body, moved verbatim from the original index.html when the mono theme was added.
+The original index.html front matter was:
+  layout: default
+  image: '/images/01.jpg'
+It runs with the same `paginator` and `site` scope as before (index.html still owns pagination).
+{%- endcomment -%}
+{% include hero.html %}
+
+<div class="container">
+  <div class="row animate">
+    {% if site.posts.size > 0 %}
+      {% for post in paginator.posts %}
+        {% include article.html %}
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+{% include pagination.html %}
+
+{% include section-tags.html %}

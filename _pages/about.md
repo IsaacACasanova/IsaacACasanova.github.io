@@ -5,4 +5,16 @@ permalink: /about/
 image: '/images/render-atl.jpg'
 ---
 
-I'm a software engineer born and raised in [Bridgeport, CT](https://en.wikipedia.org/wiki/Bridgeport,_Connecticut) who lives in Brooklyn, NY. My passions include skateboarding, listening to music, learning new languages and playing the guitar. I'm an iOS Engineer by trade, with skills in backend technologies like [Django](https://www.djangoproject.com/), [Apollo](https://www.apollographql.com/), [Protocol Buffers](https://developers.google.com/protocol-buffers), and more. It allows me to reason about systems at large, and borrow techniques from other disciplines and apply them to Swift. I currently work [@block.xyz](https://block.xyz/).
+<img class="avatar" src="/images/profile.jpg" alt="Isaac Casanova" width="160" height="160">
+
+I'm Isaac, a mobile engineer in New York. For the last twelve years I've built iOS apps for people who use them to run a business, talk to each other, or buy things — most recently at Block, where I owned One-Click Printing for Square POS and the printing architecture underneath it.
+
+Before that I was at Twitter, where I led Pinned DMs on both the client and the backend and helped build server-side DM search; at JOOR, as tech lead for the wholesale-fashion iPad apps; and at Survey Sampling International, where I started out on QuickThoughts. Along the way I've shipped React Native and Android SDKs as a contractor for SharpSports.
+
+I care about test coverage, about architectures that stay readable a year later, and about the privacy and ethical questions that come with building things millions of people carry in their pockets. I write about all of that here, occasionally.
+
+Outside work I facilitate a squad at [/dev/color](https://www.devcolor.org/), a growth network for Black software engineers, and I've spoken at [Brooklyn Swift Developers](https://www.meetup.com/Brooklyn-Swift-Developers/events/262974966/).
+
+I studied Computer Science and Engineering at the University of Connecticut, with a minor in mathematics.
+
+If you'd like to talk, [email](mailto:isaacacasanova@gmail.com) is best.

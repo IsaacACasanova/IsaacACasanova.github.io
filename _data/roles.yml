@@ -1,0 +1,50 @@
+# One entry per role, newest first. Each project: name, optional summary, optional impact.
+# logo_invert: true  -> mark is dark; flip it to light in dark mode
+# logo_fill: true    -> mark has its own background; fill the whole tile
+- company: Block (Square)
+  title: Senior Software Engineer
+  years: 2023–26
+  logo: /images/logos/square.svg
+  logo_invert: true
+  projects:
+    - { name: One-Click Printing, summary: "DRI, iOS + cross-functional rollout", impact: "88% seller adoption" }
+    - { name: Printing user journeys, summary: "re-architected DI across 50+ modules", impact: "+ observability tooling" }
+    - { name: Item Move, summary: "move items between checks in Square POS", impact: "cut on-call load" }
+    - { name: In-app messaging, summary: "reusable, localized, no eng in the loop", impact: "adopted by multiple apps" }
+
+- company: Twitter
+  title: Software Engineer II
+  years: 2021–23
+  logo: /images/logos/twitter.svg
+  projects:
+    - { name: Pinned DMs, summary: "client + backend lead, Swift/Obj-C + Scala", impact: "70k pins/day" }
+    - { name: Server-side DM Search, summary: "Combine, MVVM, GraphQL", impact: "+70% taps after search" }
+    - { name: Legacy DM infrastructure, summary: "crash triage and fixes" }
+
+- company: SharpSports
+  title: Independent contractor
+  years: 2020–23
+  logo: /images/logos/sharpsports.jpg
+  logo_fill: true
+  projects:
+    - { name: Client SDKs, summary: "React Native (npm), iOS, and Android (Kotlin)", impact: "JS ↔ native bridge" }
+
+- company: JOOR
+  title: Senior iOS Engineer, tech lead
+  years: 2018–21
+  logo: /images/logos/joor.svg
+  logo_invert: true
+  projects:
+    - { name: MVVM-C + ReactiveKit, summary: "wholesale iPad apps", impact: "88% test coverage" }
+    - { name: Mobile data layer, summary: "Realm and Core Data schema" }
+    - { name: CI, summary: "Rome + Carthage caching", impact: "builds 50% faster" }
+
+- company: Survey Sampling International
+  title: Software Engineer
+  years: 2014–17
+  logo: /images/logos/ssi.svg
+  logo_fill: true
+  projects:
+    - { name: QuickThoughts, summary: "MVVM via TDD", impact: "1% → 56% coverage" }
+    - { name: Shared framework, summary: "view-controller logic across 3 apps", impact: "3× faster iteration" }
+    - { name: Networking, summary: "AFNetworking → NSURLSession", impact: "−5% memory" }
