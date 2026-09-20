@@ -15,9 +15,11 @@
     <ul class="work">
       {%- for role in site.data.roles %}
       <li>
-        <div class="role">
+        <div class="role{% unless role.logo %} no-logo{% endunless %}">
+          {%- if role.logo %}
           <span class="logo{% if role.logo_fill %} fill{% endif %}" aria-hidden="true"><img src="{{ role.logo | relative_url }}" alt=""{% if role.logo_invert %} class="dark"{% endif %}></span>
-          <h3>{{ role.company }} <span>· {{ role.title }}</span></h3>
+          {%- endif %}
+          <h3>{% if role.url %}<a href="{{ role.url }}">{{ role.company }}</a>{% else %}{{ role.company }}{% endif %} <span>· {{ role.title }}</span></h3>
           <time>{{ role.years }}</time>
         </div>
         <ul class="projects">

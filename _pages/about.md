@@ -13,8 +13,6 @@ Before that I was at Twitter, where I led Pinned DMs on both the client and the 
 
 I care about test coverage, about architectures that stay readable a year later, and about the privacy and ethical questions that come with building things millions of people carry in their pockets. I write about all of that here, occasionally.
 
-Outside work I facilitate a squad at [/dev/color](https://www.devcolor.org/), a growth network for Black software engineers, and I've spoken at [Brooklyn Swift Developers](https://www.meetup.com/Brooklyn-Swift-Developers/events/262974966/).
-
 I studied Computer Science and Engineering at the University of Connecticut, with a minor in mathematics.
 
 If you'd like to talk, [email](mailto:isaacacasanova@gmail.com) is best.

@@ -1,4 +1,6 @@
 # One entry per role, newest first. Each project: name, optional summary, optional impact.
+# logo: optional     -> omit for no logo tile
+# url: optional      -> links the company name
 # logo_invert: true  -> mark is dark; flip it to light in dark mode
 # logo_fill: true    -> mark has its own background; fill the whole tile
 - company: Block (Square)
@@ -24,8 +26,7 @@
 - company: SharpSports
   title: Independent contractor
   years: 2020–23
-  logo: /images/logos/sharpsports.jpg
-  logo_fill: true
+  url: https://sharpsports.io/
   projects:
     - { name: Client SDKs, summary: "React Native (npm), iOS, and Android (Kotlin)", impact: "JS ↔ native bridge" }
 

@@ -48,6 +48,7 @@ Restart `jekyll serve` after changing it — `_config.yml` isn't watched.
 ## Edit content
 
 - `_data/roles.yml` — the work timeline. One entry per role; one line per project.
+  `logo` is optional (omit it for no tile); optional `url` links the company name.
 - `_data/facts.yml` — the four lines under your name.
 - `_data/links.yml` — the "elsewhere" list.
 - `images/logos/` — company marks. Add `logo_invert: true` for dark marks, `logo_fill: true`

@@ -126,6 +126,7 @@ footer{padding:48px 0 40px;border-top:1px solid var(--rule);font-family:var(--mo
   .projects{padding-left:0}
   .role{flex-wrap:wrap}
   .role time{margin-left:34px;width:100%}
+  .role.no-logo time{margin-left:0}
   .posts li{grid-template-columns:1fr;gap:2px}
   nav ul{gap:16px}
   .post,.page{padding-top:48px}
