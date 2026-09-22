@@ -51,8 +51,8 @@ section > div{grid-column:2}
 .work>li>time{position:absolute;left:0;top:2px;font-family:var(--mono);font-size:13px;color:var(--ink-3);white-space:nowrap}
 .role{display:flex;align-items:center;gap:10px;margin:0 0 8px}
 .role h3{font-size:16px;font-weight:600;margin:0}
-.role h3 span{font-weight:400;color:var(--ink-2)}
-.role h3 span::before{content:"· "}
+.role .title{color:var(--ink-2);margin-left:-5px}
+.role .title::before{content:"· "}
 .logo{flex:none;height:24px;min-width:24px;padding:0 4px;border-radius:4px;background:var(--bg-2);border:1px solid var(--rule);display:grid;place-items:center;overflow:hidden}
 .logo img{height:14px;width:auto;max-width:52px;filter:grayscale(1);opacity:.85;display:block}
 .logo.fill{padding:0;width:24px}
@@ -135,11 +135,10 @@ footer{padding:48px 0 40px;border-top:1px solid var(--rule);font-family:var(--mo
   .work>li::before{left:60.5px}
   .work>li>time{font-size:12px;top:3px}
   .projects{padding-left:0}
-  .role{align-items:flex-start}
-  .role .logo{margin-top:1px}
+  .role{flex-wrap:wrap;row-gap:2px}
   .role h3{flex:1;min-width:0}
-  .role h3 span{display:block}
-  .role h3 span::before{content:none}
+  .role .title{width:100%;margin-left:0}
+  .role .title::before{content:none}
   .posts li{grid-template-columns:1fr;gap:2px}
   .top{flex-wrap:wrap;gap:12px 20px}
   .top .name{margin-right:0}

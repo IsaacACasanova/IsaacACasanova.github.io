@@ -20,7 +20,8 @@
           {%- if role.logo %}
           <span class="logo{% if role.logo_fill %} fill{% endif %}" aria-hidden="true"><img src="{{ role.logo | relative_url }}" alt=""{% if role.logo_invert %} class="dark"{% endif %}></span>
           {%- endif %}
-          <h3>{% if role.url %}<a href="{{ role.url }}">{{ role.company }}</a>{% else %}{{ role.company }}{% endif %} <span>{{ role.title }}</span></h3>
+          <h3>{% if role.url %}<a href="{{ role.url }}">{{ role.company }}</a>{% else %}{{ role.company }}{% endif %}</h3>
+          <span class="title">{{ role.title }}</span>
         </div>
         <ul class="projects">
           {%- for p in role.projects %}
