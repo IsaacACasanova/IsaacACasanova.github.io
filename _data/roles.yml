@@ -4,6 +4,7 @@
 # logo_invert: true  -> mark is dark; flip it to light in dark mode
 # logo_fill: true    -> mark has its own background; fill the whole tile
 - company: Block (Square)
+  url: https://block.xyz/
   title: Senior Software Engineer
   years: 2023–26
   logo: /images/logos/square.svg
@@ -15,6 +16,7 @@
     - { name: In-app messaging, summary: "reusable, localized, no eng in the loop", impact: "adopted by multiple apps" }
 
 - company: Twitter
+  url: https://twitter.com/
   title: Software Engineer II
   years: 2021–23
   logo: /images/logos/twitter.svg
@@ -31,6 +33,7 @@
     - { name: Client SDKs, summary: "React Native (npm), iOS, and Android (Kotlin)", impact: "JS ↔ native bridge" }
 
 - company: JOOR
+  url: https://www.joor.com/
   title: Senior iOS Engineer, tech lead
   years: 2018–21
   logo: /images/logos/joor.svg
