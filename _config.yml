@@ -4,7 +4,7 @@ title: Isaac Casanova
 logo: # You can add own logo. For example '/images/logo.png'.
 description: Mobile engineer in New York. Notes on iOS, privacy, and the ethics of building software.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://isaaccasanova.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.isaaccasanova.com" # the base hostname & protocol for your site, e.g. http://example.com
 color_scheme: dark # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
 
