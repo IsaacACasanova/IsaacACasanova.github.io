@@ -41,20 +41,25 @@ section{display:grid;grid-template-columns:120px 1fr;column-gap:24px;padding:40p
 section > h2{grid-column:1;font-family:var(--mono);font-size:14px;font-weight:500;color:var(--ink-3);margin:2px 0 0}
 section > div{grid-column:2}
 
-/* work: one block per role, one line per project */
-.work{list-style:none;margin:0;padding:0}
-.work>li{padding:18px 0;border-top:1px solid var(--rule)}
-.work>li:first-child{border-top:0;padding-top:0}
+/* work: a timeline. Year in the left column, a rule with one dot per role, content to the right. */
+.work{list-style:none;margin:0;padding:0;position:relative}
+.work::before{content:"";position:absolute;left:72px;top:8px;bottom:8px;width:1px;background:var(--rule)}
+.work>li{position:relative;padding:0 0 28px 92px}
+.work>li:last-child{padding-bottom:0}
+.work>li::before{content:"";position:absolute;left:68.5px;top:8px;width:8px;height:8px;border-radius:50%;background:var(--bg);border:1px solid var(--ink-3)}
+.work>li:first-child::before{background:var(--accent);border-color:var(--accent)}
+.work>li>time{position:absolute;left:0;top:2px;font-family:var(--mono);font-size:13px;color:var(--ink-3);white-space:nowrap}
 .role{display:flex;align-items:center;gap:10px;margin:0 0 8px}
 .role h3{font-size:16px;font-weight:600;margin:0}
 .role h3 span{font-weight:400;color:var(--ink-2)}
-.role time{margin-left:auto;font-family:var(--mono);font-size:13px;color:var(--ink-3);white-space:nowrap}
+.role h3 span::before{content:"· "}
 .logo{flex:none;height:24px;min-width:24px;padding:0 4px;border-radius:4px;background:var(--bg-2);border:1px solid var(--rule);display:grid;place-items:center;overflow:hidden}
 .logo img{height:14px;width:auto;max-width:52px;filter:grayscale(1);opacity:.85;display:block}
 .logo.fill{padding:0;width:24px}
 .logo.fill img{height:24px;width:24px;max-width:none;opacity:1;object-fit:cover}
 [data-theme="dark"] .logo img.dark{filter:grayscale(1) invert(1)}
 .projects{list-style:none;margin:0;padding:0 0 0 34px}
+.role.no-logo+.projects{padding-left:0}
 .projects li{display:block;padding:3px 0 6px;font-size:15px;color:var(--ink-2)}
 .projects b{font-weight:500;color:var(--ink)}
 .projects .stat{display:block;font-family:var(--mono);font-size:13px;color:var(--ink-3);margin-top:1px}
@@ -123,11 +128,16 @@ footer{padding:48px 0 40px;border-top:1px solid var(--rule);font-family:var(--mo
   section{grid-template-columns:1fr;row-gap:16px;padding:32px 0}
   section > h2, section > div{grid-column:1}
   .facts{grid-template-columns:88px 1fr}
+  .work::before{left:64px}
+  .work>li{padding-left:80px}
+  .work>li::before{left:60.5px}
+  .work>li>time{font-size:12px;top:3px}
   .projects{padding-left:0}
-  .role{flex-wrap:wrap}
+  .role{align-items:flex-start}
+  .role .logo{margin-top:1px}
   .role h3{flex:1;min-width:0}
-  .role time{margin-left:34px;width:100%}
-  .role.no-logo time{margin-left:0}
+  .role h3 span{display:block}
+  .role h3 span::before{content:none}
   .posts li{grid-template-columns:1fr;gap:2px}
   nav{flex-wrap:wrap;gap:12px 20px}
   nav .name{margin-right:0}
