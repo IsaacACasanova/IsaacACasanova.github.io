@@ -1,20 +1,8 @@
 ---
 layout: default
-image: '/images/01.jpg'
 ---
-
-{% include hero.html %}
-
-<div class="container">
-  <div class="row animate">
-    {% if site.posts.size > 0 %}
-      {% for post in paginator.posts %}
-        {% include article.html %}
-      {% endfor %}
-    {% endif %}
-  </div>
-</div>
-
-{% include pagination.html %}
-
-{% include section-tags.html %}
+{%- comment -%}
+Theme switch: _config.yml `layouts_dir` decides which theme renders.
+The old Menca homepage body lives in _includes/menca/home.html.
+{%- endcomment -%}
+{% if site.layouts_dir contains "mono" %}{% include mono/home.html %}{% else %}{% include menca/home.html %}{% endif %}

@@ -1,10 +1,10 @@
 #-------------------------------
 # Site Settings
-title: Unfiltered Thoughts
+title: Isaac Casanova
 logo: # You can add own logo. For example '/images/logo.png'.
-description: Menca personal blogging theme for Jekyll
+description: Mobile engineer in New York. Notes on iOS, privacy, and the ethics of building software.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://isaaccasanova.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://isaaccasanova.com" # the base hostname & protocol for your site, e.g. http://example.com
 color_scheme: dark # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
 
@@ -56,7 +56,17 @@ disqus-identifier: isaac-casanova # Add your shortname for Disqus Comment. For e
 
 #-------------------------------
 # Google Analytics
-google-analytics: UA-180637374-1
+# Universal Analytics (UA-180637374-1) stopped processing data in 2023. Set a GA4 measurement
+# ID here if you want analytics back under Menca; the mono theme never loads analytics.
+# google-analytics:
+
+
+#-------------------------------
+# Theme switch
+# Mono theme: keep `layouts_dir` set. Menca theme: comment it out. Restart `jekyll serve` after
+# changing it (_config.yml is not watched). Menca's _layouts/, _includes/, _sass/ are untouched.
+layouts_dir: _themes/mono/layouts   # Theme switch. Comment out for Menca.
+home_post_count: 5                  # Posts shown on the mono homepage; /posts/ lists them all.
 
 
 #-------------------------------

@@ -1,0 +1,59 @@
+{%- comment -%} Homepage for the mono theme. Roles come from _data/roles.yml. {%- endcomment -%}
+<header class="hero">
+  {%- comment -%} Menca's hero__title is "Hey, I'm …"; the mono hero is just the name. {%- endcomment -%}
+  <h1>{{ site.author.author__name | default: site.title }}</h1>
+  <dl class="facts">
+    {%- for fact in site.data.facts %}
+    <dt>{{ fact.label }}</dt><dd>{{ fact.value }}</dd>
+    {%- endfor %}
+  </dl>
+</header>
+
+<section id="work">
+  <h2>work</h2>
+  <div>
+    <ul class="work">
+      {%- for role in site.data.roles %}
+      <li>
+        <div class="role{% unless role.logo %} no-logo{% endunless %}">
+          {%- if role.logo %}
+          <span class="logo{% if role.logo_fill %} fill{% endif %}" aria-hidden="true"><img src="{{ role.logo | relative_url }}" alt=""{% if role.logo_invert %} class="dark"{% endif %}></span>
+          {%- endif %}
+          <h3>{% if role.url %}<a href="{{ role.url }}">{{ role.company }}</a>{% else %}{{ role.company }}{% endif %} <span>· {{ role.title }}</span></h3>
+          <time>{{ role.years }}</time>
+        </div>
+        <ul class="projects">
+          {%- for p in role.projects %}
+          <li><span><b>{{ p.name }}</b>{% if p.summary %} — {{ p.summary }}{% endif %}</span>{% if p.impact %}<span class="stat">{{ p.impact }}</span>{% endif %}</li>
+          {%- endfor %}
+        </ul>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section id="posts">
+  <h2>writing</h2>
+  <div>
+    <ul class="posts">
+      {%- for post in site.posts limit: site.home_post_count %}
+      <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+      {%- endfor %}
+    </ul>
+    {%- if site.posts.size > site.home_post_count %}
+    <a class="more" href="{{ '/posts/' | relative_url }}">All posts</a>
+    {%- endif %}
+  </div>
+</section>
+
+<section id="contact">
+  <h2>elsewhere</h2>
+  <div>
+    <ul class="links">
+      {%- for link in site.data.links %}
+      <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>

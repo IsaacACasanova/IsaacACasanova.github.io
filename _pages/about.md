@@ -5,4 +5,14 @@ permalink: /about/
 image: '/images/render-atl.jpg'
 ---
 
-I'm a software engineer born and raised in [Bridgeport, CT](https://en.wikipedia.org/wiki/Bridgeport,_Connecticut) who lives in Brooklyn, NY. My passions include skateboarding, listening to music, learning new languages and playing the guitar. I'm an iOS Engineer by trade, with skills in backend technologies like [Django](https://www.djangoproject.com/), [Apollo](https://www.apollographql.com/), [Protocol Buffers](https://developers.google.com/protocol-buffers), and more. It allows me to reason about systems at large, and borrow techniques from other disciplines and apply them to Swift. I currently work [@block.xyz](https://block.xyz/).
+<img class="avatar" src="/images/profile.jpg" alt="Isaac Casanova" width="160" height="160">
+
+I'm Isaac, an iOS engineer in Brooklyn, originally from [Bridgeport, CT](https://en.wikipedia.org/wiki/Bridgeport,_Connecticut). I've been building iPhone apps for about twelve years, most recently at Block on Square's point of sale, and before that at Twitter, JOOR, and Survey Sampling International. Along the way I've worked across the stack too: frontend, backend, and Android.
+
+I like well-tested code and architectures that still make sense a year later. I also care about privacy and the ethics of building software, and I write about that here sometimes.
+
+Lately I've been experimenting with AI-assisted workflows to build new experiences and layouts. This website is one of them.
+
+Off the clock I skateboard, listen to a lot of music, cook, play video games, and hang out with family and friends.
+
+I studied computer science at UConn. If you want to talk, [email me](mailto:isaacacasanova@gmail.com).

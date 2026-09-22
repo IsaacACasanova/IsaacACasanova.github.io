@@ -1,0 +1,9 @@
+# Hero fact sheet. Edit freely; HTML is allowed in values.
+- label: role
+  value: Senior mobile engineer, most recently at <a href="https://block.xyz/">Block</a> (Square)
+- label: focus
+  value: iOS, cross-platform mobile, privacy, and the ethics of building both
+- label: before
+  value: Twitter, JOOR, SharpSports
+- label: now
+  value: Open to what's next; writing when something's worth saying

@@ -1,0 +1,28 @@
+{%- comment -%}
+Tags page for the mono theme. Post pages link here as /tags/#<slug>, so each heading id is the
+slugified tag name. Reuses the section label/content grid and the .posts list from css/mono.css.
+{%- endcomment -%}
+{%- capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture -%}
+{%- assign tag_words = site_tags | split: ',' | sort -%}
+<article class="page">
+  <header class="post-head">
+    <h1>Tags</h1>
+    <p class="tags">
+      {%- for word in tag_words %}
+      <a href="#{{ word | slugify }}">{{ word }}</a>{% unless forloop.last %} {% endunless %}
+      {%- endfor %}
+    </p>
+  </header>
+  {%- for word in tag_words %}
+  <section class="tag-group">
+    <h2 id="{{ word | slugify }}">{{ word }}</h2>
+    <div>
+      <ul class="posts all">
+        {%- for post in site.tags[word] %}
+        <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </section>
+  {%- endfor %}
+</article>
