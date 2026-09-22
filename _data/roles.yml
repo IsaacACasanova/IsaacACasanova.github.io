@@ -43,8 +43,7 @@
 - company: Survey Sampling International
   title: Software Engineer
   years: 2014–17
-  logo: /images/logos/ssi.svg
-  logo_fill: true
+  url: https://www.dynata.com/
   projects:
     - { name: QuickThoughts, summary: "MVVM via TDD", impact: "1% → 56% coverage" }
     - { name: Shared framework, summary: "view-controller logic across 3 apps", impact: "3× faster iteration" }
