@@ -5,3 +5,4 @@
 - { label: instagram,  url: "https://www.instagram.com/mrcasanova" }
 - { label: bluesky,    url: "https://bsky.app/profile/isaaccasanova.com" }
 - { label: mastodon,   url: "https://macaw.social/@icasanova" }
+- { label: nostr,      url: "https://primal.net/p/nprofile1qqs09ws79mhkqf7ngl55fw5gnkpxh7tsexhukt9rpw5s5tlhqnz4xlct8a40a" }
