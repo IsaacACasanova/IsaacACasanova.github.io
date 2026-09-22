@@ -40,8 +40,8 @@
       <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="here"{% endif %}>Posts</a></li>
       <li><a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about' %} class="here"{% endif %}>About</a></li>
       <li><a href="{{ '/contact/' | relative_url }}"{% if page.url contains '/contact' %} class="here"{% endif %}>Contact</a></li>
-      <li><button class="toggle" id="theme-toggle" type="button">light</button></li>
     </ul>
+    <button class="toggle" id="theme-toggle" type="button">light</button>
   </nav>
 
   {{ content }}
