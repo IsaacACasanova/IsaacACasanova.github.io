@@ -7,12 +7,12 @@ image: '/images/render-atl.jpg'
 
 <img class="avatar" src="/images/profile.jpg" alt="Isaac Casanova" width="160" height="160">
 
-I'm Isaac, a mobile engineer in New York. For the last twelve years I've built iOS apps for people who use them to run a business, talk to each other, or buy things — most recently at Block, where I owned One-Click Printing for Square POS and the printing architecture underneath it.
+I'm Isaac, an iOS engineer in Brooklyn, originally from [Bridgeport, CT](https://en.wikipedia.org/wiki/Bridgeport,_Connecticut). I've been building iPhone apps for about twelve years, most recently at Block on Square's point of sale, and before that at Twitter, JOOR, and Survey Sampling International. Along the way I've worked across the stack too: frontend, backend, and Android.
 
-Before that I was at Twitter, where I led Pinned DMs on both the client and the backend and helped build server-side DM search; at JOOR, as tech lead for the wholesale-fashion iPad apps; and at Survey Sampling International, where I started out on QuickThoughts. Along the way I've shipped React Native and Android SDKs as a contractor for SharpSports.
+I like well-tested code and architectures that still make sense a year later. I also care about privacy and the ethics of building software, and I write about that here sometimes.
 
-I care about test coverage, about architectures that stay readable a year later, and about the privacy and ethical questions that come with building things millions of people carry in their pockets. I write about all of that here, occasionally.
+Lately I've been experimenting with AI-assisted workflows to build new experiences and layouts. This website is one of them.
 
-I studied Computer Science and Engineering at the University of Connecticut, with a minor in mathematics.
+Off the clock I skateboard, listen to a lot of music, cook, play video games, and hang out with family and friends.
 
-If you'd like to talk, [email](mailto:isaacacasanova@gmail.com) is best.
+I studied computer science at UConn. If you want to talk, [email me](mailto:isaacacasanova@gmail.com).
