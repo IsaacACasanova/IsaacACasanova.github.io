@@ -3,3 +3,5 @@
 - { label: linkedin,   url: "https://www.linkedin.com/in/isaacacasanova/" }
 - { label: twitter,    url: "https://twitter.com/casanovacane" }
 - { label: instagram,  url: "https://www.instagram.com/mrcasanova" }
+- { label: bluesky,    url: "https://bsky.app/profile/isaaccasanova.com" }
+- { label: mastodon,   url: "https://macaw.social/@icasanova" }
