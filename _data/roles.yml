@@ -10,9 +10,10 @@
   logo: /images/logos/square.svg
   logo_invert: true
   projects:
-    - { name: One-Click Printing, summary: "DRI, iOS + cross-functional rollout", impact: "88% seller adoption" }
+    - { name: One-Click Printer Setup, summary: "DRI, iOS + cross-functional rollout", impact: "88% seller adoption" }
     - { name: Printing user journeys, summary: "re-architected DI across 50+ modules", impact: "+ observability tooling" }
     - { name: Item Move, summary: "move items between checks in Square POS", impact: "cut on-call load" }
+    - { name: Combos on Printed Tickets, summary: "add combos on receipts and kitchen tickets to support wider POS release" }
     - { name: In-app messaging, summary: "reusable, localized, no eng in the loop", impact: "adopted by multiple apps" }
 
 - company: Twitter
