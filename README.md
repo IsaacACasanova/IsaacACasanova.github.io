@@ -75,3 +75,12 @@ through a pull request.
 The Pages custom domain is `www.isaaccasanova.com`, and `url` in `_config.yml` matches it. The bare
 domain redirects to `www` over HTTP; over HTTPS it fails certificate validation because GitHub's
 certificate covers only `www`. Setting the Pages custom domain to the bare domain would fix that.
+
+## License
+
+- The code in this repo that I wrote (the mono theme, `_config.yml`, `index.html`, the dispatcher
+  includes) is under the [MIT License](LICENSE).
+- The content (posts in `_posts/`, the About and Contact text, `_data/*.yml`, and the images in
+  `images/`) is © Isaac Casanova, all rights reserved. It is not covered by the MIT License.
+- The Menca theme files (`_layouts/`, `_sass/`, and `_includes/` outside `mono/` and `menca/`) are by
+  Artem Sheludko and remain under Menca's own license.
