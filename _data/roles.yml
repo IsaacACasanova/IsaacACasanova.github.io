@@ -14,6 +14,7 @@
     - { name: Printing user journeys, summary: "re-architected DI across 50+ modules", impact: "+ observability tooling" }
     - { name: Item Move, summary: "move items between checks in Square POS", impact: "cut on-call load" }
     - { name: Combos on Printed Tickets, summary: "add combos on receipts and kitchen tickets to support wider POS release" }
+    - { name: Printer Error Toasts, summary: "built error messaging UI that informs merchants of printer errors as they occur, and gives them options to troubleshoot immediately" }
     - { name: In-app messaging, summary: "reusable, localized, no eng in the loop", impact: "adopted by multiple apps" }
 
 - company: Twitter
