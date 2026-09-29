@@ -10,6 +10,7 @@ layout: default
   <div class="prose">
     {{ content }}
   </div>
+  {% if site.disqus-identifier and page.comments != false %}{% include mono/comments.html %}{% endif %}
   <nav class="post-nav">
     {% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><span>older</span>{{ page.previous.title }}</a>{% else %}<span></span>{% endif %}
     {% if page.next %}<a href="{{ page.next.url | relative_url }}" class="next"><span>newer</span>{{ page.next.title }}</a>{% endif %}
