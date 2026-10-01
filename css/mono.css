@@ -101,6 +101,11 @@ section > div{grid-column:2}
 .post-nav a{max-width:48%;font-weight:500}
 .post-nav a span{display:block;font-family:var(--mono);font-size:12px;color:var(--ink-3);font-weight:400;margin-bottom:2px}
 .post-nav .next{text-align:right;margin-left:auto}
+.comments{margin-top:40px}
+.comments-btn{background:none;border:1px solid var(--rule);color:var(--ink-2);font:14px var(--mono);padding:8px 14px;border-radius:3px;cursor:pointer}
+.comments-btn:hover{color:var(--ink);border-color:var(--ink-3)}
+.comments-note{font-family:var(--mono);font-size:12px;color:var(--ink-3);margin:10px 0 0}
+.comments.is-open .comments-btn,.comments.is-open .comments-note{display:none}
 .page .posts.all li{padding:8px 0}
 
 /* contact page: Menca's Formspree form markup (_pages/contact.html), styled minimally here */

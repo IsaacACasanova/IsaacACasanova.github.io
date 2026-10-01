@@ -1,0 +1,39 @@
+<!-- Disqus loads only after a click, so readers who never open comments get no third-party requests. -->
+<div class="comments">
+  <button class="comments-btn" id="comments-btn" type="button">show comments</button>
+  <p class="comments-note">Loads Disqus, which sets third-party cookies.</p>
+  <div id="disqus_thread"></div>
+</div>
+<script>
+  (function () {
+    var btn = document.getElementById('comments-btn'), loaded = false;
+    // Old threads are matched by URL, so pin it to the canonical address.
+    var disqus_config = window.disqus_config = function () {
+      this.page.url = '{{ page.url | absolute_url }}';
+    };
+    function load() {
+      var s = document.createElement('script');
+      s.src = 'https://{{ site.disqus-identifier }}.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      document.head.appendChild(s);
+    }
+    btn.addEventListener('click', function () {
+      if (loaded) return;
+      loaded = true;
+      btn.parentNode.classList.add('is-open');
+      load();
+    });
+    // Disqus picks its light or dark palette from the text color once, and DISQUS.reset keeps
+    // it. So on a theme flip, tear it down and load it again once the body's .2s color
+    // transition has settled.
+    new MutationObserver(function () {
+      if (!loaded) return;
+      setTimeout(function () {
+        document.getElementById('disqus_thread').innerHTML = '';
+        delete window.DISQUS;
+        load();
+      }, 300);
+    }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  })();
+</script>
+<noscript><p class="comments-note">Comments need JavaScript and are powered by Disqus.</p></noscript>
