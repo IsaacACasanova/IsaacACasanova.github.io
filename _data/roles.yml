@@ -3,6 +3,15 @@
 # url: optional      -> links the company name
 # logo_invert: true  -> mark is dark; flip it to light in dark mode
 # logo_fill: true    -> mark has its own background; fill the whole tile
+- company: Compose
+  url: /for-myself-for-once
+  title: Founder
+  years: 2026–
+  projects:
+    - { name: iOS app, summary: "write once, publish to Bluesky, Mastodon, Threads, and X" }
+    - { name: Android app, summary: "Kotlin port of the provider layer, in progress" }
+    - { name: Encrypted sync, summary: "Rust vault service that stores only ciphertext" }
+
 - company: Block (Square)
   url: https://block.xyz/
   title: Senior Software Engineer
