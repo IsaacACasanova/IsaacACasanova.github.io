@@ -23,7 +23,7 @@ Don't ever let anyone, including yourself, make you believe that you can't do wh
 
 We've been conditioned to believe that improvement should operate in a straight, upward trajectory. In reality, there will be days where you absolutely crush it, and days where you're not your best. That's OK, we're human, and the best way I maintain confidence in myself is remembering that fact.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Momentum matters more than perfection. <a href="https://t.co/ju76b7gsqj">pic.twitter.com/ju76b7gsqj</a></p>&mdash; Sarah Arnold-Hall (@saraharnoldhall) <a href="https://twitter.com/saraharnoldhall/status/1511503387984285696?ref_src=twsrc%5Etfw">April 6, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Momentum matters more than perfection. <a href="https://t.co/ju76b7gsqj">pic.twitter.com/ju76b7gsqj</a></p>&mdash; Sarah Arnold-Hall (@saraharnoldhall) <a href="https://twitter.com/saraharnoldhall/status/1511503387984285696?ref_src=twsrc%5Etfw">April 6, 2022</a></blockquote><br>
 
 # Ask questions
 

@@ -126,11 +126,3 @@ I'm not gonna pretend I know if, or when there's a reversal of this trend regard
 If you've made it to the bottom of this article, I'd like to thank you for your time. I try my best to remain truthful and unbiased to what's happening around us. If you have anything you'd like to say, positive or negative, please leave a comment, but be respectful. Until next time![^1]
 
 [^1]: Claude Fable was used to create this post, but only to format it and insert media. The argument and prose are mine.
-
-<script>
-  // Match X embeds to the site theme at load. Kept at the end of the post so it covers every embed above it. They don't re-render on toggle.
-  document.querySelectorAll('.twitter-tweet').forEach(function (b) {
-    b.dataset.theme = document.documentElement.dataset.theme || 'dark';
-  });
-</script>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

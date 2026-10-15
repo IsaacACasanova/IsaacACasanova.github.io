@@ -47,6 +47,7 @@
   </nav>
 
   {{ content }}
+  {% include mono/x-embeds.html %}
 
   <footer>
     <span>© {{ 'now' | date: '%Y' }} {{ site.author.author__name }}</span>
