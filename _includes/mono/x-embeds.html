@@ -1,0 +1,44 @@
+{%- comment -%}
+X embeds follow the site theme. Any page with a <blockquote class="twitter-tweet"> gets widgets.js
+loaded from here, so posts only need the blockquote. widgets.js bakes the theme into each iframe
+when it renders and swaps the blockquote out, so on a theme flip each embed is rebuilt from a saved
+copy of its blockquote and rendered again.
+{%- endcomment -%}
+<script>
+  (function () {
+    var root = document.documentElement, embeds = [];
+    function theme() { return root.dataset.theme || 'dark'; }
+    document.querySelectorAll('blockquote.twitter-tweet').forEach(function (b) {
+      b.dataset.theme = theme();
+      var holder = document.createElement('div');
+      holder.className = 'x-embed';
+      b.parentNode.insertBefore(holder, b);
+      holder.appendChild(b);
+      embeds.push({ holder: holder, source: b.cloneNode(true) });
+    });
+    if (!embeds.length) return;
+    new MutationObserver(function () {
+      embeds.forEach(function (e) {
+        var pending = e.holder.querySelector('blockquote.twitter-tweet');
+        if (pending || !window.twttr || !twttr.widgets) {
+          // Not rendered yet: the new theme is picked up when widgets.js gets to it.
+          if (pending) pending.dataset.theme = theme();
+          return;
+        }
+        var fresh = e.source.cloneNode(true);
+        fresh.dataset.theme = theme();
+        // Hold the old height while the new card loads so the page doesn't jump.
+        e.holder.style.minHeight = e.holder.offsetHeight + 'px';
+        e.holder.innerHTML = '';
+        e.holder.appendChild(fresh);
+        var done = twttr.widgets.load(e.holder);
+        if (done && done.then) done.then(function () { e.holder.style.minHeight = ''; });
+      });
+    }).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
+    var s = document.createElement('script');
+    s.src = 'https://platform.twitter.com/widgets.js';
+    s.async = true;
+    s.charset = 'utf-8';
+    document.head.appendChild(s);
+  })();
+</script>
