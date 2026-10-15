@@ -8,7 +8,7 @@ tags: [ai, software, opinion]
 ---
 AI psychosis, as I've come to learn from my own personal experience, is the observed change in behavior and thinking of the tech industry at large. It’s the belief that more can be done with less, that anything with a moat can be quickly vibe coded, that software is as disposable as the thoughts coming and going from your brain.
 
-> Wikipedia describes AI psychosis as “individuals reportedly develop[ing] or experienc[ing] symptoms of psychosis, such as paranoia and delusions” through the use of AI chatbots. For the purposes of this discussion, we focus on the collective delusion of the commanding worker class (CEOs).
+> Wikipedia describes AI psychosis as “individuals reportedly develop[ing] or experienc[ing] symptoms of psychosis, such as paranoia and delusions” through the use of AI chatbots.
 > <cite>[Wikipedia, AI-induced psychosis](https://en.wikipedia.org/wiki/AI-induced_psychosis)</cite>
 
 # Preface
