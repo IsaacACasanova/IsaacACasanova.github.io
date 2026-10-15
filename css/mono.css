@@ -151,4 +151,32 @@ footer{padding:48px 0 40px;border-top:1px solid var(--rule);font-family:var(--mo
   .toggle{margin-left:auto}
   .post,.page{padding-top:48px}
 }
+/* post media: link cards, X embeds, framed charts, citations, footnotes */
+.prose img.inset{display:block;box-sizing:border-box;width:100%;padding:12px;background:var(--bg-2);border:1px solid var(--rule)}
+.prose blockquote cite{display:block;margin-top:6px;font-family:var(--mono);font-size:13px;font-style:normal;color:var(--ink-3)}
+.prose sup{font-size:.7em;line-height:0;position:relative;top:-.55em;vertical-align:baseline;margin-left:1px}
+.prose sup a.footnote{font-family:var(--mono);text-decoration:none;padding:0 2px}
+.prose .footnotes a.reversefootnote{text-decoration:none;margin-left:4px;color:var(--ink-3)}
+.prose .footnotes a.reversefootnote:hover{color:var(--accent)}
+.prose .footnotes{margin-top:3em;padding-top:1.2em;border-top:1px solid var(--rule);font-size:14px;color:var(--ink-2)}
+.prose .footnotes ol{padding-left:1.4em}
+.prose .footnotes p{margin:0}
+.prose .twitter-tweet{margin:1.4em 0}
+.prose figure .twitter-tweet{margin:0}
+.prose blockquote.twitter-tweet{padding:0;border-left:0;color:var(--ink-2)}
+.prose figure .link-card{margin:0}
+/* Chrome paints a cross-origin iframe opaque white when its color scheme differs from the page's; X's card is light-scheme with 12px corners. */
+.prose .twitter-tweet iframe{color-scheme:light;border-radius:12px}
+.prose .link-card{display:flex;gap:14px;align-items:flex-start;margin:1.4em 0;padding:14px 16px;border:1px solid var(--rule);border-radius:4px;background:var(--bg-2);color:inherit;text-decoration:none}
+.prose .link-card:hover{border-color:var(--ink-3);text-decoration:none}
+.prose .link-card span{display:block}
+.prose .link-card-site,.prose .link-card-by{font-family:var(--mono);font-size:12px;color:var(--ink-3)}
+.prose .link-card-body{min-width:0}
+.prose .link-card-mark{width:22px;height:22px;flex:none;margin-top:1px}
+.prose .mark-reddit{fill:#FF4500}
+.prose .mark-patreon{fill:#fff}
+[data-theme="light"] .prose .mark-patreon{fill:#000}
+.prose .link-card-title{font-weight:500;margin:4px 0 2px}
+.prose .link-card-desc{color:var(--ink-2);font-size:15px;margin-bottom:6px}
+
 @media (prefers-reduced-motion:reduce){body{transition:none}}
