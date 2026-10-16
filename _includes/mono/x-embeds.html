@@ -2,16 +2,19 @@
 X embeds follow the site theme. Any page with a <blockquote class="twitter-tweet"> gets widgets.js
 loaded from here, so posts only need the blockquote. widgets.js bakes the theme into each iframe
 when it renders and swaps the blockquote out, so on a theme flip each embed is rebuilt from a saved
-copy of its blockquote and rendered again.
+copy of its blockquote and rendered again. While a card is loading its holder carries .is-loading,
+which mono.css draws as a placeholder; X's "rendered" event clears it.
 {%- endcomment -%}
 <script>
   (function () {
     var root = document.documentElement, embeds = [];
     function theme() { return root.dataset.theme || 'dark'; }
+    function settle(holder) { holder.classList.remove('is-loading'); holder.style.minHeight = ''; }
+    function settleAll() { embeds.forEach(function (e) { settle(e.holder); }); }
     document.querySelectorAll('blockquote.twitter-tweet').forEach(function (b) {
       b.dataset.theme = theme();
       var holder = document.createElement('div');
-      holder.className = 'x-embed';
+      holder.className = 'x-embed is-loading';
       b.parentNode.insertBefore(holder, b);
       holder.appendChild(b);
       embeds.push({ holder: holder, source: b.cloneNode(true) });
@@ -29,16 +32,29 @@ copy of its blockquote and rendered again.
         fresh.dataset.theme = theme();
         // Hold the old height while the new card loads so the page doesn't jump.
         e.holder.style.minHeight = e.holder.offsetHeight + 'px';
+        e.holder.classList.add('is-loading');
         e.holder.innerHTML = '';
         e.holder.appendChild(fresh);
-        var done = twttr.widgets.load(e.holder);
-        if (done && done.then) done.then(function () { e.holder.style.minHeight = ''; });
+        twttr.widgets.load(e.holder);
       });
     }).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
+    // X's ready queue, so the rendered handler is bound as soon as widgets.js runs.
+    var t = window.twttr = window.twttr || {};
+    t._e = t._e || [];
+    t.ready = t.ready || function (f) { t._e.push(f); };
+    t.ready(function (tw) {
+      tw.events.bind('rendered', function (ev) {
+        var holder = ev.target && ev.target.closest('.x-embed');
+        if (holder) settle(holder);
+      });
+    });
+    // If a card never renders (blocked script, deleted post), stop pulsing and leave the fallback link card.
+    setTimeout(settleAll, 10000);
     var s = document.createElement('script');
     s.src = 'https://platform.twitter.com/widgets.js';
     s.async = true;
     s.charset = 'utf-8';
+    s.onerror = settleAll;
     document.head.appendChild(s);
   })();
 </script>
