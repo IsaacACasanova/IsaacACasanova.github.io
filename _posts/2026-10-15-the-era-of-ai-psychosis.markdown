@@ -3,9 +3,14 @@ layout: post
 title: The Era of AI Psychosis
 description: The belief that more can be done with less, that anything with a moat can be quickly vibe coded, that software is as disposable as the thoughts coming and going from your brain.
 date: 2026-10-15 17:42:31 -0400
-image: /images/tech-layoffs-by-year-2020-2026.webp
+image: /images/ai-psychosis-dominoes.webp
 tags: [ai, software, opinion]
 ---
+<figure class="hero-art">
+  <img class="theme-dark" src="/images/ai-psychosis-dominoes-dark.svg" alt="A row of dominoes: five have fallen in a widening chain, one is mid-fall, four still stand." width="1456" height="440">
+  <img class="theme-light" src="/images/ai-psychosis-dominoes-light.svg" alt="" width="1456" height="440">
+</figure>
+
 AI psychosis, as I've come to learn from my own personal experience, is the observed change in behavior and thinking of the tech industry at large. It’s the belief that more can be done with less, that anything with a moat can be quickly vibe coded, that software is as disposable as the thoughts coming and going from your brain.
 
 > Wikipedia describes AI psychosis as “individuals reportedly develop[ing] or experienc[ing] symptoms of psychosis, such as paranoia and delusions” through the use of AI chatbots.

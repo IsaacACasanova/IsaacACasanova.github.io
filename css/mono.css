@@ -152,6 +152,11 @@ footer{padding:48px 0 40px;border-top:1px solid var(--rule);font-family:var(--mo
   .post,.page{padding-top:48px}
 }
 /* post media: link cards, X embeds, framed charts, citations, footnotes */
+/* Theme-paired artwork: a dark and a light copy, one shown per theme. The first carries the alt text. */
+.prose .hero-art{margin:0 0 2em}
+.prose .hero-art img{display:block;width:100%}
+.prose .hero-art .theme-light,[data-theme="light"] .prose .hero-art .theme-dark{display:none}
+[data-theme="light"] .prose .hero-art .theme-light{display:block}
 .prose img.inset{display:block;box-sizing:border-box;width:100%;padding:12px;background:var(--bg-2);border:1px solid var(--rule)}
 .prose blockquote cite{display:block;margin-top:6px;font-family:var(--mono);font-size:13px;font-style:normal;color:var(--ink-3)}
 .prose sup{font-size:.7em;line-height:0;position:relative;top:-.55em;vertical-align:baseline;margin-left:1px}
