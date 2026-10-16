@@ -152,6 +152,11 @@ footer{padding:48px 0 40px;border-top:1px solid var(--rule);font-family:var(--mo
   .post,.page{padding-top:48px}
 }
 /* post media: link cards, X embeds, framed charts, citations, footnotes */
+/* Theme-paired artwork: a dark and a light copy, one shown per theme. The first carries the alt text. */
+.prose .hero-art{margin:0 0 2em}
+.prose .hero-art img{display:block;width:100%}
+.prose .hero-art .theme-light,[data-theme="light"] .prose .hero-art .theme-dark{display:none}
+[data-theme="light"] .prose .hero-art .theme-light{display:block}
 .prose img.inset{display:block;box-sizing:border-box;width:100%;padding:12px;background:var(--bg-2);border:1px solid var(--rule)}
 .prose blockquote cite{display:block;margin-top:6px;font-family:var(--mono);font-size:13px;font-style:normal;color:var(--ink-3)}
 .prose sup{font-size:.7em;line-height:0;position:relative;top:-.55em;vertical-align:baseline;margin-left:1px}
@@ -163,10 +168,20 @@ footer{padding:48px 0 40px;border-top:1px solid var(--rule);font-family:var(--mo
 .prose .footnotes p{margin:0}
 .prose .twitter-tweet{margin:1.4em 0}
 .prose figure .twitter-tweet{margin:0}
-.prose blockquote.twitter-tweet{padding:0;border-left:0;color:var(--ink-2)}
+/* An X blockquote is a plain card with the fallback link: what shows before widgets.js runs, and what stays if it never renders. */
+.prose blockquote.twitter-tweet{position:relative;min-height:220px;padding:16px 18px;border:1px solid var(--rule);border-radius:12px;background:var(--bg-2);font-family:var(--mono);font-size:13px;line-height:1.5;color:var(--ink-3)}
+.prose blockquote.twitter-tweet p{margin:0 0 .6em;color:var(--ink-2)}
+.prose blockquote.twitter-tweet a{color:var(--ink-2)}
 .prose figure .link-card{margin:0}
 /* Chrome paints a cross-origin iframe opaque white when its color scheme differs from the page's; X's card is light-scheme with 12px corners. */
 .prose .twitter-tweet iframe{color-scheme:light;border-radius:12px}
+/* While a card loads, the holder pulses a placeholder the size of a short post. Drawn on the holder so it survives whatever widgets.js does to the blockquote. */
+.x-embed{position:relative}
+.x-embed.is-loading{min-height:220px}
+.x-embed.is-loading::before{content:"";position:absolute;inset:0;border:1px solid var(--rule);border-radius:12px;background:var(--bg-2);animation:x-pulse 1.4s ease-in-out infinite}
+.x-embed.is-loading blockquote.twitter-tweet{border-color:transparent;background:none}
+@keyframes x-pulse{50%{opacity:.55}}
+@media (prefers-reduced-motion:reduce){.x-embed.is-loading::before{animation:none}}
 .prose .link-card{display:flex;gap:14px;align-items:flex-start;margin:1.4em 0;padding:14px 16px;border:1px solid var(--rule);border-radius:4px;background:var(--bg-2);color:inherit;text-decoration:none}
 .prose .link-card:hover{border-color:var(--ink-3);text-decoration:none}
 .prose .link-card span{display:block}
