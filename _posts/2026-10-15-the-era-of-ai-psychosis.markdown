@@ -9,6 +9,7 @@ tags: [ai, software, opinion]
 <figure class="hero-art">
   <img class="theme-dark" src="/images/ai-psychosis-dominoes-dark.svg" alt="A row of dominoes: five have fallen in a widening chain, one is mid-fall, four still stand." width="1456" height="440">
   <img class="theme-light" src="/images/ai-psychosis-dominoes-light.svg" alt="" width="1456" height="440">
+  <figcaption>A stack of dominoes falling, representing the uniform delivery of layoffs in tech driven by the rise of AI.</figcaption>
 </figure>
 
 AI psychosis, as I've come to learn from my own personal experience, is the observed change in behavior and thinking of the tech industry at large. It’s the belief that more can be done with less, that anything with a moat can be quickly vibe coded, that software is as disposable as the thoughts coming and going from your brain.
