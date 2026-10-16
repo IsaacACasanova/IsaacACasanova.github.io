@@ -3,20 +3,42 @@ X embeds follow the site theme. Any page with a <blockquote class="twitter-tweet
 loaded from here, so posts only need the blockquote. widgets.js bakes the theme into each iframe
 when it renders and swaps the blockquote out, so on a theme flip each embed is rebuilt from a saved
 copy of its blockquote and rendered again. While a card is loading its holder carries .is-loading,
-which mono.css draws as a placeholder; X's "rendered" event clears it.
+which mono.css draws as a placeholder; X's "rendered" event clears it. The placeholder is sized
+from the height this browser measured for the card last time (localStorage, keyed by status id and
+card width), else the desktop height in _data/x_embed_heights.yml, else the stylesheet's default.
 {%- endcomment -%}
 <script>
   (function () {
-    var root = document.documentElement, embeds = [];
+    var root = document.documentElement, embeds = [], KEY = 'x-embed-heights';
+    var hints = {{ site.data.x_embed_heights | jsonify }} || {}, remembered = {};
+    try { remembered = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) {}
     function theme() { return root.dataset.theme || 'dark'; }
-    function settle(holder) { holder.classList.remove('is-loading'); holder.style.minHeight = ''; }
+    function idOf(b) {
+      var a = b.querySelector('a[href*="/status/"]'), m = a && a.href.match(/\/status\/(\d+)/);
+      return m ? m[1] : '';
+    }
+    // X caps the card at 550px wide, and height depends on width.
+    function sizeKey(holder) { return holder.dataset.id + '@' + Math.min(550, holder.clientWidth); }
+    function reserve(holder) {
+      var h = remembered[sizeKey(holder)] || hints[holder.dataset.id];
+      if (h) holder.style.minHeight = h + 'px';
+    }
+    function settle(holder) {
+      holder.classList.remove('is-loading');
+      holder.style.minHeight = '';
+      if (!holder.dataset.id || !holder.querySelector('iframe')) return;
+      remembered[sizeKey(holder)] = holder.offsetHeight;
+      try { localStorage.setItem(KEY, JSON.stringify(remembered)); } catch (e) {}
+    }
     function settleAll() { embeds.forEach(function (e) { settle(e.holder); }); }
     document.querySelectorAll('blockquote.twitter-tweet').forEach(function (b) {
       b.dataset.theme = theme();
       var holder = document.createElement('div');
       holder.className = 'x-embed is-loading';
+      holder.dataset.id = idOf(b);
       b.parentNode.insertBefore(holder, b);
       holder.appendChild(b);
+      reserve(holder);
       embeds.push({ holder: holder, source: b.cloneNode(true) });
     });
     if (!embeds.length) return;

@@ -1,0 +1,9 @@
+# Rendered height of each X embed, in px, at the full 550px card width, including the 10px margin X
+# puts above and below the card. Keyed by status id. Used as the placeholder height on a reader's
+# first visit; after that their browser uses the height it measured itself.
+#
+# To fill or refresh: open a post on a desktop-width window, let the embeds load, and run this in
+# the browser console, then paste the result here (one "id: height" line per embed):
+#   JSON.parse(localStorage['x-embed-heights'])
+# Entries ending in @550 are the desktop ones.
+{}
