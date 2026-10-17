@@ -1,6 +1,7 @@
 - { label: email,      url: "mailto:isaacacasanova@gmail.com" }
 - { label: github,     url: "https://github.com/IsaacACasanova" }
 - { label: linkedin,   url: "https://www.linkedin.com/in/isaacacasanova/" }
+- { label: substack,   url: "https://substack.com/@casanovacane" }
 - { label: twitter,    url: "https://twitter.com/casanovacane" }
 - { label: instagram,  url: "https://www.instagram.com/mrcasanova" }
 - { label: bluesky,    url: "https://bsky.app/profile/isaaccasanova.com" }
