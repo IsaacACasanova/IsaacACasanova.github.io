@@ -17,6 +17,6 @@ To those of you reading, this is my best example of the thoughts I've had over t
 
 *Do I say I'm ok?*
 
-*Instantly losing access. Slack notifications piling up on my phone, from people I can no longer reply to.*
+> *Instantly losing access. Slack notifications piling up on my phone, from people I can no longer reply to.*
 
 "Um... I'm ok, I guess?"
