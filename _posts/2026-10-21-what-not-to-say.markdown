@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What Not to Say
+title: "What not to say to someone who's been laid off"
 description: 
 date: 2026-10-21 12:00:00 -0400
 image: 
