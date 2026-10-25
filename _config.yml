@@ -57,8 +57,17 @@ disqus-identifier: isaac-casanova # Add your shortname for Disqus Comment. For e
 #-------------------------------
 # Google Analytics
 # Universal Analytics (UA-180637374-1) stopped processing data in 2023. Set a GA4 measurement
-# ID here if you want analytics back under Menca; the mono theme never loads analytics.
+# ID here if you want analytics back under Menca; the mono theme never loads Google Analytics.
 # google-analytics:
+
+
+#-------------------------------
+# GoatCounter (mono theme only)
+# Privacy-friendly page counts, and the "N views" figure in each post header. Set this to your
+# GoatCounter site code: the part before .goatcounter.com. Leave blank to load nothing.
+# In GoatCounter, turn on Settings → "Allow adding visitor counts on your website" so the
+# per-post count can be read.
+goatcounter: ''
 
 
 #-------------------------------

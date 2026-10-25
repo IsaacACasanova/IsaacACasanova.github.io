@@ -48,6 +48,7 @@
 
   {{ content }}
   {% include mono/x-embeds.html %}
+  {% if site.goatcounter and site.goatcounter != '' %}{% include mono/goatcounter.html %}{% endif %}
 
   <footer>
     <span>© {{ 'now' | date: '%Y' }} {{ site.author.author__name }}</span>
