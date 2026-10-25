@@ -51,7 +51,7 @@ Posts go in `_posts/` as `YYYY-MM-DD-slug.markdown` with `layout: post`, `title`
 
 ```
 _themes/mono/layouts/   default, post, page
-_includes/mono/         homepage and tags-page bodies
+_includes/mono/         homepage and tags-page bodies, plus read-time.html (word count at 200 wpm)
 _includes/menca/        the Menca equivalents (moved out of index.html and _pages/tags.html)
 index.html              dispatcher: includes whichever theme's homepage is active
 css/mono.css            all mono styling; colours are the CSS variables at the top
