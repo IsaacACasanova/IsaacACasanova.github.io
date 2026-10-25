@@ -67,7 +67,7 @@ disqus-identifier: isaac-casanova # Add your shortname for Disqus Comment. For e
 # GoatCounter site code: the part before .goatcounter.com. Leave blank to load nothing.
 # In GoatCounter, turn on Settings → "Allow adding visitor counts on your website" so the
 # per-post count can be read.
-goatcounter: ''
+goatcounter: casanovacane
 
 
 #-------------------------------
