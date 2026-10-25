@@ -82,6 +82,7 @@ section > div{grid-column:2}
 .post-head .meta{display:flex;flex-wrap:wrap;align-items:center;gap:0 8px;margin:0;font-family:var(--mono);font-size:13px;color:var(--ink-2)}
 .post-head .meta time{color:inherit}
 .post-head .meta>span[aria-hidden]{color:var(--ink-3)}
+.post-head .meta>[hidden]{display:none}
 .post-head h1{font-size:clamp(30px,5vw,40px);line-height:1.1;letter-spacing:-.02em;font-weight:600;margin:8px 0 0}
 .tags{font-family:var(--mono);font-size:13px;color:var(--ink-3);margin:12px 0 0}
 .tags a{color:var(--ink-2)}

@@ -65,7 +65,12 @@ A few mechanics worth knowing:
 - The stylesheet link carries the build time as a query string, so a deploy always busts the browser cache.
 - The theme toggle stores its choice in `localStorage` and follows the system preference until a choice
   is made.
-- Mono loads no analytics, comments, search, or newsletter.
+- Mono loads no search or newsletter, and no analytics unless `goatcounter` is set in `_config.yml`.
+  With it set, every page is counted by [GoatCounter](https://www.goatcounter.com/) (no cookies, no
+  personal data) and each post header shows its view count. Setup: create a GoatCounter site, put
+  its code (the part before `.goatcounter.com`) in `goatcounter`, and turn on "Allow adding visitor
+  counts on your website" in GoatCounter's settings so the count endpoint answers. The count stays
+  hidden until the first view is recorded or if the request fails.
 
 ## Deploy
 

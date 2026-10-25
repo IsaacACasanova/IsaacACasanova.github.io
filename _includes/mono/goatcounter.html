@@ -1,0 +1,26 @@
+{%- comment -%}
+GoatCounter for the mono theme. Loads only when `goatcounter` is set in _config.yml (the site code,
+as in <code>.goatcounter.com). count.js skips localhost on its own. On posts the recorded path is pinned
+to the canonical permalink, and the page's own visitor count is fetched into the header's meta line.
+{%- endcomment -%}
+{%- assign gc_url = 'https://' | append: site.goatcounter | append: '.goatcounter.com' -%}
+<script data-goatcounter="{{ gc_url }}/count"{% if page.layout == 'post' %} data-goatcounter-settings='{"path": "{{ page.url }}"}'{% endif %} async src="https://gc.zgo.at/count.js"></script>
+{%- if page.layout == 'post' %}
+<script>
+  // Fill in "· N views" once GoatCounter answers; stay hidden on any failure or a zero count.
+  (function () {
+    var el = document.querySelector('.views[data-path]');
+    if (!el || !window.fetch) return;
+    var url = '{{ gc_url }}/counter/' + encodeURIComponent(el.dataset.path) + '.json';
+    fetch(url).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+      var n = d && d.count ? parseInt(String(d.count).replace(/\D/g, ''), 10) : 0;
+      if (!n) return;
+      el.querySelector('[data-views]').textContent = n.toLocaleString('en-US');
+      el.querySelector('[data-views-label]').textContent = n === 1 ? 'view' : 'views';
+      el.hidden = false;
+      var sep = el.previousElementSibling;
+      if (sep && sep.classList.contains('views-sep')) sep.hidden = false;
+    }).catch(function () {});
+  })();
+</script>
+{%- endif %}

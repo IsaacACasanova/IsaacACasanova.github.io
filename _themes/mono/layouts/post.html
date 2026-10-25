@@ -7,6 +7,10 @@ layout: default
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %b %Y" }}</time>
       <span aria-hidden="true">·</span>
       <span>{% include mono/read-time.html content=page.content %}</span>
+      {%- if site.goatcounter and site.goatcounter != '' %}
+      <span class="views-sep" aria-hidden="true" hidden>·</span>
+      <span class="views" data-path="{{ page.url }}" hidden><span data-views></span> <span data-views-label>views</span></span>
+      {%- endif %}
     </p>
     <h1>{{ page.title }}</h1>
     {% if page.tags.size > 0 %}<p class="tags">{% for tag in page.tags %}<a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">{{ tag }}</a>{% unless forloop.last %}{{ ' ' }}{% endunless %}{% endfor %}</p>{% endif %}
