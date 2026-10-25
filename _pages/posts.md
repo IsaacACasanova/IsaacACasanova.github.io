@@ -7,6 +7,6 @@ permalink: /posts/
 ---
 <ul class="posts all">
 {% for post in site.posts %}
-  <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time><span><a href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="meta">{% include mono/read-time.html content=post.content %}</span></span></li>
+  <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
