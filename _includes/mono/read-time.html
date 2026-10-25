@@ -1,0 +1,8 @@
+{%- comment -%}
+Reading time for the mono theme. Pass the post body: {% include mono/read-time.html content=post.content %}
+Counts the raw words at 200 per minute, rounded up, never below one minute.
+{%- endcomment -%}
+{%- assign read_words = include.content | strip_html | number_of_words -%}
+{%- assign read_minutes = read_words | plus: 199 | divided_by: 200 -%}
+{%- if read_minutes < 1 %}{% assign read_minutes = 1 %}{% endif -%}
+{{ read_minutes }} min read
