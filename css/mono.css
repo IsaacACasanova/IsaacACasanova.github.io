@@ -68,9 +68,7 @@ section > div{grid-column:2}
 .posts{list-style:none;margin:0;padding:0}
 .posts li{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:10px 0}
 .posts time{font-family:var(--mono);font-size:13px;color:var(--ink-3);padding-top:3px}
-.posts li>span{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 16px}
 .posts a{font-weight:500}
-.posts .meta{font-family:var(--mono);font-size:13px;color:var(--ink-2);white-space:nowrap}
 .more{display:inline-block;margin-top:18px;font-family:var(--mono);font-size:14px;color:var(--ink-2)}
 
 /* elsewhere */
