@@ -57,8 +57,9 @@ margin, sticks while you scroll, and marks the section you're reading.
 ```
 _themes/mono/layouts/   default, post, page
 _includes/mono/         homepage and tags-page bodies, read-time.html (word count at 200 wpm),
-                        related.html (posts sharing a tag, shown under each post), and toc.html
-                        (the contents list on longer posts)
+                        related.html (posts sharing a tag, shown under each post), toc.html
+                        (the contents list on longer posts), and progress.html (the reading
+                        progress line along the top of a post)
 _includes/menca/        the Menca equivalents (moved out of index.html and _pages/tags.html)
 index.html              dispatcher: includes whichever theme's homepage is active
 css/mono.css            all mono styling; colours are the CSS variables at the top
