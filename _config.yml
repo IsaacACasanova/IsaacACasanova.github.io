@@ -76,8 +76,6 @@ goatcounter: casanovacane
 # changing it (_config.yml is not watched). Menca's _layouts/, _includes/, _sass/ are untouched.
 layouts_dir: _themes/mono/layouts   # Theme switch. Comment out for Menca.
 home_post_count: 5                  # Posts shown on the mono homepage; /posts/ lists them all.
-toc_min_headings: 3                 # A post shows a contents list once it has this many headings
-toc_min_words: 800                  # and this many words. Front matter `toc: true/false` overrides.
 
 
 #-------------------------------
