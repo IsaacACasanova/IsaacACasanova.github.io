@@ -1,0 +1,26 @@
+{%- comment -%}
+Heading anchors for the mono theme: {% include mono/anchors.html content=content %} in place of
+{{ content }}. Appends a "#" link to every h1–h3 kramdown gave an id, pointing at that id, so a
+reader can link to a section. Pure Liquid: the body is split on "<h"; a piece that opens an
+h1–h3 with an id gets the link inserted before its closing tag, every other piece (hr, header,
+h4+, headings without ids) is put back untouched. Code blocks are safe: their "<" is escaped.
+{%- endcomment -%}
+{%- assign anchor_pieces = include.content | split: "<h" -%}
+{{- anchor_pieces[0] -}}
+{%- for piece in anchor_pieces offset: 1 -%}
+  {%- assign level = piece | slice: 0 -%}
+  {%- assign open_tag = piece | split: ">" | first -%}
+  {%- assign anchored = false -%}
+  {%- if open_tag contains 'id="' -%}
+    {%- if level == "1" or level == "2" or level == "3" -%}{%- assign anchored = true -%}{%- endif -%}
+  {%- endif -%}
+  {%- if anchored -%}
+    {%- assign id = open_tag | split: 'id="' | last | split: '"' | first -%}
+    {%- assign close = "</h" | append: level | append: ">" -%}
+    {%- assign halves = piece | split: close -%}
+    {%- assign rest = halves | shift | join: close -%}
+    {{- "<h" -}}{{- halves[0] -}}<a class="anchor" href="#{{ id }}" aria-label="Link to this section">#</a>{{- close -}}{{- rest -}}
+  {%- else -%}
+    {{- "<h" -}}{{- piece -}}
+  {%- endif -%}
+{%- endfor -%}
