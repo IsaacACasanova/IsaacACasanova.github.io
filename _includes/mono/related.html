@@ -1,0 +1,38 @@
+{%- comment -%}
+Related posts for the mono theme: {% include mono/related.html limit=3 %}
+Every other post that shares a tag with this one, ranked by how many tags it shares, newest
+first on ties. Nothing renders when no post shares a tag. Pure Liquid: each candidate becomes
+a "SS|IIII" key (two-digit shared count, four-digit inverted position in site.posts, which is
+newest first), so one sort puts the best match at the end and the reversed list reads in order.
+{%- endcomment -%}
+{%- assign related_limit = include.limit | default: 3 -%}
+{%- assign related_keys = "" | split: "" -%}
+{%- if page.tags.size > 0 -%}
+  {%- for other in site.posts -%}
+    {%- if other.url == page.url %}{% continue %}{% endif -%}
+    {%- assign shared = 0 -%}
+    {%- for tag in page.tags -%}
+      {%- if other.tags contains tag %}{% assign shared = shared | plus: 1 %}{% endif -%}
+    {%- endfor -%}
+    {%- if shared > 0 -%}
+      {%- assign score = shared | prepend: "00" | slice: -2, 2 -%}
+      {%- assign newness = 9999 | minus: forloop.index0 | prepend: "0000" | slice: -4, 4 -%}
+      {%- assign key = score | append: "|" | append: newness -%}
+      {%- assign related_keys = related_keys | push: key -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- if related_keys.size > 0 -%}
+{%- assign related_keys = related_keys | sort | reverse -%}
+<aside class="related" aria-labelledby="related-heading">
+  <h2 id="related-heading">related</h2>
+  <ul class="posts">
+    {%- for key in related_keys limit: related_limit -%}
+    {%- assign newness = key | split: "|" | last | plus: 0 -%}
+    {%- assign index = 9999 | minus: newness -%}
+    {%- assign other = site.posts[index] %}
+    <li><time datetime="{{ other.date | date_to_xmlschema }}">{{ other.date | date: "%b %Y" }}</time><a href="{{ other.url | relative_url }}">{{ other.title }}</a></li>
+    {%- endfor %}
+  </ul>
+</aside>
+{%- endif -%}
