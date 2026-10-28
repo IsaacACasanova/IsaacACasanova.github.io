@@ -18,7 +18,7 @@ layout: default
   </header>
   {% include mono/toc.html content=page.content %}
   <div class="prose">
-    {{ content }}
+    {% include mono/anchors.html content=content %}
   </div>
   {% include mono/related.html limit=3 %}
   {% if site.disqus-identifier and page.comments != false %}{% include mono/comments.html %}{% endif %}
