@@ -56,6 +56,7 @@ _includes/mono/         homepage and tags-page bodies, read-time.html (word coun
 _includes/menca/        the Menca equivalents (moved out of index.html and _pages/tags.html)
 index.html              dispatcher: includes whichever theme's homepage is active
 css/mono.css            all mono styling; colours are the CSS variables at the top
+css/giscus-*.css        the mono palette as giscus themes, loaded inside the comments iframe
 images/favicon.svg      favicon, plus favicon.ico and images/apple-touch-icon.png
 ```
 
@@ -66,6 +67,13 @@ A few mechanics worth knowing:
 - The stylesheet link carries the build time as a query string, so a deploy always busts the browser cache.
 - The theme toggle stores its choice in `localStorage` and follows the system preference until a choice
   is made.
+- Comments come from [giscus](https://giscus.app): each post is a thread in this repo's GitHub
+  Discussions, readers sign in with GitHub to post, and nothing sets cookies or tracks. They stay
+  off until `giscus.category_id` is set in `_config.yml`; the comment above it lists the one-time
+  setup (enable Discussions, install the giscus app, copy the category id from giscus.app).
+  `comments: false` in a post's front matter hides them on that post. Threads are matched by
+  pathname, so renaming a post's slug starts a fresh thread. The old Disqus threads were not
+  migrated; Menca still loads Disqus from `disqus-identifier`.
 - Mono loads no search or newsletter, and no analytics unless `goatcounter` is set in `_config.yml`.
   With it set, every page is counted by [GoatCounter](https://www.goatcounter.com/) (no cookies, no
   personal data) and each post header shows its view count. Setup: create a GoatCounter site, put

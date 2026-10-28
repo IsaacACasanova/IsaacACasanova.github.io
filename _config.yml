@@ -50,8 +50,21 @@ contact:
 
 
 #-------------------------------
-# Comment Section (Disqus)
-disqus-identifier: isaac-casanova # Add your shortname for Disqus Comment. For example demo-menca
+# Comments (mono theme: giscus)
+# Each post's comments live as a thread in this repo's GitHub Discussions. No cookies, no
+# trackers; readers sign in with GitHub to post. One-time setup: turn on Discussions in the
+# repo settings, install https://github.com/apps/giscus on the repo, then open https://giscus.app,
+# pick the repo and the category below, and paste the category id it shows into category_id.
+# Comments stay off every post until category_id is set. Front matter `comments: false` hides
+# them on one post. css/giscus-dark.css and css/giscus-light.css carry the site's colours in.
+giscus:
+  repo: IsaacACasanova/IsaacACasanova.github.io
+  repo_id: R_kgDOHAEr2g
+  category: Announcements    # only maintainers open threads here, so every thread is a post
+  category_id: ''
+
+# Menca theme only: its Disqus shortname. Mono no longer loads Disqus.
+disqus-identifier: isaac-casanova
 
 
 #-------------------------------

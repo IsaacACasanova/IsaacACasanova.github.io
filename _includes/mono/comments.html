@@ -1,39 +1,47 @@
-<!-- Disqus loads only after a click, so readers who never open comments get no third-party requests. -->
-<div class="comments">
-  <button class="comments-btn" id="comments-btn" type="button">show comments</button>
-  <p class="comments-note">Loads Disqus, which sets third-party cookies.</p>
-  <div id="disqus_thread"></div>
-</div>
+{%- comment -%}
+Comments for the mono theme via giscus, which keeps each thread in this repo's GitHub
+Discussions: no cookies, no trackers, no ads. Settings come from `giscus` in _config.yml, and
+the post layout only includes this once giscus.category_id is set. Each post maps to one
+discussion by its pathname. The widget's colours come from css/giscus-dark.css and
+css/giscus-light.css, which giscus loads by absolute URL, so a local build pulls the deployed
+copies. A theme flip posts the new stylesheet URL into the iframe.
+{%- endcomment -%}
+<section class="comments" id="comments" aria-labelledby="comments-heading">
+  <h2 id="comments-heading">comments</h2>
+  <div class="giscus"></div>
+  <p class="comments-note">Powered by <a href="https://giscus.app">giscus</a> and GitHub Discussions. Sign in with GitHub to post; nothing is tracked.</p>
+</section>
 <script>
   (function () {
-    var btn = document.getElementById('comments-btn'), loaded = false;
-    // Old threads are matched by URL, so pin it to the canonical address.
-    var disqus_config = window.disqus_config = function () {
-      this.page.url = '{{ page.url | absolute_url }}';
+    var themes = {
+      dark: '{{ "/css/giscus-dark.css" | absolute_url }}',
+      light: '{{ "/css/giscus-light.css" | absolute_url }}'
     };
-    function load() {
-      var s = document.createElement('script');
-      s.src = 'https://{{ site.disqus-identifier }}.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      document.head.appendChild(s);
-    }
-    btn.addEventListener('click', function () {
-      if (loaded) return;
-      loaded = true;
-      btn.parentNode.classList.add('is-open');
-      load();
-    });
-    // Disqus picks its light or dark palette from the text color once, and DISQUS.reset keeps
-    // it. So on a theme flip, tear it down and load it again once the body's .2s color
-    // transition has settled.
+    function theme() { return themes[document.documentElement.dataset.theme] || themes.dark; }
+    var attrs = {
+      'data-repo': '{{ site.giscus.repo }}',
+      'data-repo-id': '{{ site.giscus.repo_id }}',
+      'data-category': '{{ site.giscus.category }}',
+      'data-category-id': '{{ site.giscus.category_id }}',
+      'data-mapping': 'pathname',
+      'data-strict': '0',
+      'data-reactions-enabled': '1',
+      'data-emit-metadata': '0',
+      'data-input-position': 'top',
+      'data-theme': theme(),
+      'data-lang': 'en',
+      'data-loading': 'lazy'
+    };
+    var s = document.createElement('script');
+    s.src = 'https://giscus.app/client.js';
+    for (var k in attrs) s.setAttribute(k, attrs[k]);
+    s.crossOrigin = 'anonymous';
+    s.async = true;
+    document.getElementById('comments').appendChild(s);
     new MutationObserver(function () {
-      if (!loaded) return;
-      setTimeout(function () {
-        document.getElementById('disqus_thread').innerHTML = '';
-        delete window.DISQUS;
-        load();
-      }, 300);
+      var frame = document.querySelector('iframe.giscus-frame');
+      if (frame) frame.contentWindow.postMessage({ giscus: { setConfig: { theme: theme() } } }, 'https://giscus.app');
     }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
   })();
 </script>
-<noscript><p class="comments-note">Comments need JavaScript and are powered by Disqus.</p></noscript>
+<noscript><p class="comments-note">Comments need JavaScript.</p></noscript>

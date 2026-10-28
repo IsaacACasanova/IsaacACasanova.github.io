@@ -108,11 +108,10 @@ section > div{grid-column:2}
 .post-nav .next{text-align:right;margin-left:auto}
 .related{margin-top:56px;padding-top:24px;border-top:1px solid var(--rule)}
 .related h2{font-family:var(--mono);font-size:14px;font-weight:500;color:var(--ink-3);margin:0 0 6px}
-.comments{margin-top:40px}
-.comments-btn{background:none;border:1px solid var(--rule);color:var(--ink-2);font:14px var(--mono);padding:8px 14px;border-radius:3px;cursor:pointer}
-.comments-btn:hover{color:var(--ink);border-color:var(--ink-3)}
+.comments{margin-top:56px;padding-top:24px;border-top:1px solid var(--rule)}
+.comments h2{font-family:var(--mono);font-size:14px;font-weight:500;color:var(--ink-3);margin:0 0 16px}
 .comments-note{font-family:var(--mono);font-size:12px;color:var(--ink-3);margin:10px 0 0}
-.comments.is-open .comments-btn,.comments.is-open .comments-note{display:none}
+.comments-note a{color:var(--ink-2)}
 .page .posts.all li{padding:8px 0}
 
 /* contact page: Menca's Formspree form markup (_pages/contact.html), styled minimally here */
