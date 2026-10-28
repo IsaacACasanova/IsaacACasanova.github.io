@@ -47,19 +47,13 @@ Posts go in `_posts/` as `YYYY-MM-DD-slug.markdown` with `layout: post`, `title`
 `description` and `image`. Permalinks are `/:title`. The homepage lists the latest `home_post_count`
 (set in `_config.yml`); `/posts/` lists them all.
 
-Longer posts get a contents list under the header, built from their headings: at least
-`toc_min_headings` headings and `toc_min_words` words (both in `_config.yml`). `toc: true` or
-`toc: false` in a post's front matter overrides that. On wide screens the list sits in the left
-margin, sticks while you scroll, and marks the section you're reading.
-
 ## Where the mono theme lives
 
 ```
 _themes/mono/layouts/   default, post, page
 _includes/mono/         homepage and tags-page bodies, read-time.html (word count at 200 wpm),
-                        related.html (posts sharing a tag, shown under each post), toc.html
-                        (the contents list on longer posts), and anchors.html (the "#" link
-                        after each heading)
+                        related.html (posts sharing a tag, shown under each post), and
+                        anchors.html (the "#" link after each heading)
 _includes/menca/        the Menca equivalents (moved out of index.html and _pages/tags.html)
 index.html              dispatcher: includes whichever theme's homepage is active
 css/mono.css            all mono styling; colours are the CSS variables at the top
